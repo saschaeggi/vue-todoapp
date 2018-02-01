@@ -2,7 +2,7 @@
     <ul class="todos">
         <li
             class="todo"
-            v-for="todo in todos"
+            v-for="todo in todos.reverse()"
             v-bind:key="todo.id"
             v-bind:class="{ 'is-done ' : todo.done }"
         >
